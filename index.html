@@ -5,9 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - Katas 04</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        [class*="col-"] {
+          float: left;
+          padding: 20px;
+        }
+        
+        html {
+          font-family: "Lucida Sans", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        .header {
+          background-color: #334fcc;
+          color: #ffffff;
+          padding: 15px;
+          text-align: center;
+        }
+        
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0px;
+        }
+        
+        .menu li {
+          padding: 10px;
+          margin-bottom: 7px;
+          background-color: #093a4b;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          
+        }
+        
+        .menu li:hover {
+          background-color: #0099cc;
+        }
+        
+        
+        
+        .footer {
+          background-color: #0099cc;
+          color: #ffffff;
+          text-align: center;
+          font-size: 15px;
+          padding: 10px;
+        }
+        
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+          
+        }
+        
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-3 {
+            width: 100%;
+            padding: 20px;
+        }
+          
+        }
+        </style>
 </head>
 <body>
     <h1>JS - Katas 04</h1>
+    
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+              
+            <li>Kata 1:<p id="kata1"></p></li>
+            <li>Kata 2:<p id="kata2"></p></li>
+            <li>Kata 3:<p id="kata3"></p></li>
+            <li>Kata 4:<p id="kata4"></p></li>
+            <li>Kata 5:<p id="kata5"></p></li>
+            <li>Kata 6:<p id="kata6"></p></li>
+            <li>Kata 7:<p id="kata7"></p></li>
+            <li>Kata 8:<p id="kata8"></p></li>
+            <li>Kata 9:<p id="kata9"></p></li>
+            <li>Kata 10:<p id="kata10"></p></li>
+            <li>Kata 11:<p id="kata11"></p></li>
+            <li>Kata 12:<p id="kata12"></p></li>
+            <li>Kata 13:<p id="kata13"></p></li>
+            <li>Kata 14:<p id="kata14"></p></li>
+            <li>Kata 15:<p id="kata15"></p></li>
+            <li>Kata 16:<p id="kata16"></p></li>
+            <li>Kata 17:<p id="kata17"></p></li>
+            <li>Kata 18:<p id="kata18"></p></li>
+            <li>Kata 19:<p id="kata19"></p></li>
+            <li>Kata 20:<p id="kata20"></p></li>
+          </ul>
+        </div>
+    </div>
+    <h1>JS - Bônus Katas 0pcional</h1>
+    
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+              
+            <li>Kata 1:<p id="kataE1"></p></li>
+            <li>Kata 2:<p id="kataE2"></p></li>
+            <li>Kata 3:<p id="kataE3"></p></li>
+            <li>Kata 4:<p id="kataE4"></p></li>
+            <li>Kata 5:<p id="kataE5"></p></li>
+            <li>Kata 6:<p id="kataE6"></p></li>
+            <li>Kata 7:<p id="kataE7"></p></li>
+            <li>Kata 8:<p id="kataE8"></p></li>
+            <li>Kata 9:<p id="kataE9"></p></li>
+            <li>Kata 10:<p id="kataE10"></p></li>
+            <li>Kata 11:<p id="kataE11"></p></li>
+            <li>Kata 12:<p id="kataE12"></p></li>
+            
+          </ul>
+        </div>
+    </div>
     <script src="katas4.js"></script>
 </body>
 </html>
